@@ -1,10 +1,12 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
+  pathPrefix: "/DiffyAI.github.io", // Replace this with your repository name
+
   siteMetadata: {
-    siteUrl: "https://gatsbykontent-aihomepage.gatsbyjs.io/",
+    siteUrl: "https://gatsbykontent-aihomepage.gatsbyjs.io/", // Update this if needed for your actual GitHub Pages URL
     title: "Gatsby Kontent.ai Homepage Starter",
     author: `Gatsby`,
     description: "A Gatsby Starter for building homepages with Kontent.ai",
@@ -33,4 +35,4 @@ module.exports = {
       },
     },
   ],
-}
+};
